@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.rosestack</groupId>
+    <artifactId>rose-build</artifactId>
+    <version>0.1.2-SNAPSHOT</version>
+    <relativePath/>
+  </parent>
+  <groupId>io.github.rosestack</groupId>
+  <artifactId>rose-spring</artifactId>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+
+  <name>Rose :: Spring</name>
+  <description>Rose Spring</description>
+
+  <modules>
+    <module>rose-spring-bom</module>
+    <module>rose-spring-parent</module>
+    <module>rose-spring-context</module>
+  </modules>
+
+  <properties>
+    <revision>0.0.1-SNAPSHOT</revision>
+    <java.version>17</java.version>
+  </properties>
+
+</project>
