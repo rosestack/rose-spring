@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.ContextualSerializer;
 
-import io.github.rosestack.core.util.SensitiveUtils;
+import io.github.rosestack.util.SensitiveUtils;
 import io.github.rosestack.spring.annotation.Sensitive;
 import io.github.rosestack.spring.expression.SpringExpressionResolver;
 

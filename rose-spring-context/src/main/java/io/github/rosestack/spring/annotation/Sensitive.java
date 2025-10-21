@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-import io.github.rosestack.core.util.SensitiveType;
-import io.github.rosestack.core.util.SensitiveUtils;
+import io.github.rosestack.util.SensitiveType;
+import io.github.rosestack.util.SensitiveUtils;
 import io.github.rosestack.spring.desensitization.FieldSensitiveSerializer;
 
 /**

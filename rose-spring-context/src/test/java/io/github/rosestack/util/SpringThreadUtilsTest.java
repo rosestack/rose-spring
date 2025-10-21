@@ -1,4 +1,4 @@
-package io.github.rosestack.core.util;
+package io.github.rosestack.util;
 
 import static org.junit.jupiter.api.Assertions.*;
 

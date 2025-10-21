@@ -14,6 +14,40 @@
 
   <name>Rose :: Spring</name>
   <description>Rose Spring</description>
+  <url>https://github.com/rosestack/rose-spring</url>
+
+  <organization>
+    <name>RoseStack</name>
+    <url>https://github.com/rosestack</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>chensoul</id>
+      <name>Chensoul</name>
+      <email>ichensoul@gmail.com</email>
+      <organization>RoseStack</organization>
+      <roles>
+        <role>lead</role>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/rosestack/rose-spring</url>
+    <connection>scm:git:git://github.com/rosestack/rose-spring.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/rosestack/rose-spring.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
   <modules>
     <module>rose-spring-bom</module>

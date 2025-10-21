@@ -39,7 +39,7 @@ import org.springframework.expression.spel.SpelParserConfiguration;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 
-import io.github.rosestack.core.util.date.DateUtils;
+import io.github.rosestack.util.date.DateUtils;
 import io.github.rosestack.spring.util.SpringContextUtils;
 
 /**
