@@ -17,7 +17,7 @@
   <description>Rose Spring Parent</description>
 
   <properties>
-    <rose-java.version>0.0.1-SNAPSHOT</rose-java.version>
+    <rose-java.version>0.0.2</rose-java.version>
     <servlet-api.version>6.1.0</servlet-api.version>
     <websocket-api.version>2.2.0</websocket-api.version>
     <jackson.version>2.18.2</jackson.version>

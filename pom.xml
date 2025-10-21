@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.github.rosestack</groupId>
     <artifactId>rose-build</artifactId>
-    <version>0.1.2-SNAPSHOT</version>
+    <version>0.1.2</version>
     <relativePath/>
   </parent>
   <groupId>io.github.rosestack</groupId>
@@ -24,6 +24,8 @@
   <properties>
     <revision>0.0.1-SNAPSHOT</revision>
     <java.version>17</java.version>
+
+    <flatten.mode>ossrh</flatten.mode>
   </properties>
 
 </project>
