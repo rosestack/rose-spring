@@ -1,9 +1,6 @@
 package io.github.rosestack.spring.bean;
 
-import java.beans.Introspector;
-import java.lang.reflect.Method;
-
-import org.apache.commons.lang3.ArrayUtils;
+import io.github.rosestack.util.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.support.AopUtils;
@@ -17,6 +14,9 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
+
+import java.beans.Introspector;
+import java.lang.reflect.Method;
 
 public abstract class BeanRegistrar {
     private static final Logger logger = LoggerFactory.getLogger(BeanRegistrar.class);
@@ -65,7 +65,7 @@ public abstract class BeanRegistrar {
             Class<?> beanType, int role, Object[] constructorArguments) {
         BeanDefinitionBuilder beanDefinitionBuilder =
                 BeanDefinitionBuilder.genericBeanDefinition(beanType).setRole(role);
-        int length = ArrayUtils.getLength(constructorArguments);
+        int length = ArrayUtils.length(constructorArguments);
 
         for (int i = 0; i < length; ++i) {
             Object constructorArgument = constructorArguments[i];
@@ -230,7 +230,7 @@ public abstract class BeanRegistrar {
                 if (logger.isDebugEnabled()) {
                     logger.debug(
                             "The bean[name : '{}' , role : {}] definition [{}] has been registered.",
-                            new Object[] {beanName, beanDefinition.getRole(), beanDefinition});
+                            new Object[]{beanName, beanDefinition.getRole(), beanDefinition});
                 }
 
                 registered = true;
@@ -238,7 +238,7 @@ public abstract class BeanRegistrar {
                 if (logger.isErrorEnabled()) {
                     logger.error(
                             "The bean[name : '{}' , role : {}] definition [{}] can't be registered ",
-                            new Object[] {beanName, beanDefinition.getRole(), e});
+                            new Object[]{beanName, beanDefinition.getRole(), e});
                 }
 
                 registered = false;
@@ -295,7 +295,7 @@ public abstract class BeanRegistrar {
      * @param bean     Bean实例
      */
     public static final void registerFactoryBean(BeanDefinitionRegistry registry, String beanName, Object bean) {
-        AbstractBeanDefinition beanDefinition = genericBeanDefinition(DelegatingFactoryBean.class, new Object[] {bean});
+        AbstractBeanDefinition beanDefinition = genericBeanDefinition(DelegatingFactoryBean.class, new Object[]{bean});
         beanDefinition.setSource(bean);
         registerBeanDefinition(registry, beanName, beanDefinition);
     }

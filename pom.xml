@@ -56,7 +56,7 @@
   </modules>
 
   <properties>
-    <revision>0.0.1-SNAPSHOT</revision>
+    <revision>0.0.3-SNAPSHOT</revision>
     <java.version>17</java.version>
 
     <flatten.mode>ossrh</flatten.mode>

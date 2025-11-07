@@ -24,8 +24,8 @@ import java.util.Properties;
 import java.util.UUID;
 import java.util.function.Function;
 
-import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.StringUtils;
+import io.github.rosestack.util.StringUtils;
+import io.github.rosestack.util.date.DateUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.expression.BeanFactoryResolver;
@@ -39,7 +39,6 @@ import org.springframework.expression.spel.SpelParserConfiguration;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 
-import io.github.rosestack.util.date.DateUtils;
 import io.github.rosestack.spring.util.SpringContextUtils;
 
 /**
@@ -109,13 +108,13 @@ public class SpringExpressionResolver implements Function<Object, Object> {
     }
 
     private void initializeDynamicVariables() {
-        evaluationContext.setVariable("randomNumber2", RandomStringUtils.randomNumeric(2));
-        evaluationContext.setVariable("randomNumber4", RandomStringUtils.randomNumeric(4));
-        evaluationContext.setVariable("randomNumber6", RandomStringUtils.randomNumeric(6));
-        evaluationContext.setVariable("randomNumber8", RandomStringUtils.randomNumeric(8));
-        evaluationContext.setVariable("randomString4", RandomStringUtils.randomAlphabetic(4));
-        evaluationContext.setVariable("randomString6", RandomStringUtils.randomAlphabetic(6));
-        evaluationContext.setVariable("randomString8", RandomStringUtils.randomAlphabetic(8));
+//        evaluationContext.setVariable("randomNumber2", RandomStringUtils.randomNumeric(2));
+//        evaluationContext.setVariable("randomNumber4", RandomStringUtils.randomNumeric(4));
+//        evaluationContext.setVariable("randomNumber6", RandomStringUtils.randomNumeric(6));
+//        evaluationContext.setVariable("randomNumber8", RandomStringUtils.randomNumeric(8));
+//        evaluationContext.setVariable("randomString4", RandomStringUtils.randomAlphabetic(4));
+//        evaluationContext.setVariable("randomString6", RandomStringUtils.randomAlphabetic(6));
+//        evaluationContext.setVariable("randomString8", RandomStringUtils.randomAlphabetic(8));
         evaluationContext.setVariable("uuid", UUID.randomUUID().toString());
 
         evaluationContext.setVariable(

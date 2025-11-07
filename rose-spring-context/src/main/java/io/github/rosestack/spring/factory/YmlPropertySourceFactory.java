@@ -3,7 +3,7 @@ package io.github.rosestack.spring.factory;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.apache.commons.lang3.StringUtils;
+import io.github.rosestack.util.StringUtils;
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.core.env.PropertySource;
